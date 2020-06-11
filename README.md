@@ -47,3 +47,12 @@ $ bundle install
 ```bash
 $ rackup config.ru -o 0.0.0.0
 ```
+
+## Docker commands
+
+### Build and Running
+
+```bash
+$ docker-compose up --build
+```
+
