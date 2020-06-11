@@ -56,3 +56,25 @@ $ rackup config.ru -o 0.0.0.0
 $ docker-compose up --build
 ```
 
+### create database
+
+```bash
+$ docker-compose run --rm web rake db:create
+$ docker-compose run --rm web rake db:migrate
+```
+
+### Access console
+
+```bash
+$ docker-compose run --rm web tux
+```
+
+#### creating migration example
+
+* ex:
+
+```bash
+$ docker-compose run --rm web rake db:create_migration NAME=create_faqs
+$ docker-compose run --rm web rake db:create_migration NAME=create_hashtags
+$ docker-compose run --rm web rake db:create_migration NAME=create_faq_hashtags
+```
