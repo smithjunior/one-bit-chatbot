@@ -1,14 +1,16 @@
-require "json"
-require "sinatra"
-require "sinatra/activerecord"
+# frozen_string_literal: true
 
-require "./config/database"
+require 'json'
+require 'sinatra'
+require 'sinatra/activerecord'
+
+require './config/database'
 
 # Load Models
-Dir["./app/models/*.rb"].each { |file| require file }
+Dir['./app/models/*.rb'].sort.each { |file| require file }
 
 class App < Sinatra::Base
-  get "/" do
-    "Hello World!"
+  get '/' do
+    'Hello World!'
   end
 end
