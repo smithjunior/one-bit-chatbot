@@ -6,14 +6,14 @@ RSpec.configure do |config|
   end
 
   config.before(:each) do
-    DatabaseCleanner.strategy = :transaction
+    DatabaseCleaner.strategy = :transaction
   end
 
   config.before(:each) do
-    DatabaseCleanner.start
+    DatabaseCleaner.start
   end
 
   config.after(:each) do
-    DatabaseCleanner.clean
+    DatabaseCleaner.clean
   end
 end

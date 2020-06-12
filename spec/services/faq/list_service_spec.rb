@@ -33,6 +33,7 @@ describe FaqModule::ListService do
       context "empty query" do
         it "return don't find message" do
           @listService = FaqModule::ListService.new({ "query" => "" }, "search")
+
           response = @listService.call()
           expect(response).to match("Nada encontrado")
         end
@@ -42,7 +43,8 @@ describe FaqModule::ListService do
         it "find question and answer in response" do
           faq = create(:faq)
 
-          @listService = FaqModule::ListService.new({ "query" => faq.question.split("").sample }, "search")
+          @listService = FaqModule::ListService.new({ "query" => faq.question.split(" ").sample }, "search")
+
           response = @listService.call()
 
           expect(response).to match(faq.question)

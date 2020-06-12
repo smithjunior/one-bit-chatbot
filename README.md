@@ -63,6 +63,12 @@ $ docker-compose run --rm web rake db:create
 $ docker-compose run --rm web rake db:migrate
 ```
 
+### Running testing
+
+```bash
+$ docker-compose run --rm web rspec -fd
+```
+
 ### Access console
 
 ```bash
