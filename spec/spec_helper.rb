@@ -17,7 +17,7 @@ module RSpecMixin
   end
 end
 
-Rspec.configure do |c|
+RSpec.configure do |c|
   c.include RSpecMixin
   ActiveRecord::Base.logger = nil
   ENV["LOG"] == true
