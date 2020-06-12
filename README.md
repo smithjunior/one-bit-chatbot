@@ -84,3 +84,10 @@ $ docker-compose run --rm web rake db:create_migration NAME=create_faqs
 $ docker-compose run --rm web rake db:create_migration NAME=create_hashtags
 $ docker-compose run --rm web rake db:create_migration NAME=create_faq_hashtags
 ```
+### Testing webhook
+
+```curl
+curl -X POST http://localhost:9292/webhook -H "Content-type: application/json" -d '{"queryResult": {"contexts": [{"parameters": {"question": "ques", "answer": "answ1", "hashtags": "php, js"}}],"action": "create"}}'
+
+{"payload":{"telegram":{"text":"Criado com sucesso","parse_mode":"Markdown"}}}
+```

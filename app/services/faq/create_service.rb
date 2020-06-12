@@ -1,6 +1,7 @@
 module FaqModule
   class CreateService
     def initialize(params)
+      puts params
       @question = params["question"]
       @answer = params["answer"]
       @hashtags = params["hashtags"]
