@@ -10,7 +10,7 @@ module FaqModule
       return "Questão inválida, verifique o Id" if faq == nil
       Faq.transaction do
         faq.hashtags.each do |h|
-          if h.faq.count <= 1
+          if h.faqs.count <= 1
             h.delete
           end
         end

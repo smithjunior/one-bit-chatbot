@@ -2,12 +2,12 @@
 
 ## Funcoes Chatbot
 
-- [ ] Listagem de perguntas e respostas
-- [ ] Inclusão de novas questões
-- [ ] Remocão de questão
-- [ ] Pesquisa de perguntas e respostas
-- [ ] Pesquisa de perguntas e respostas por hashtags
-- [ ] Listagem de comandos disponíveis
+- [x] Listagem de perguntas e respostas
+- [x] Inclusão de novas questões
+- [x] Remocão de questão
+- [x] Pesquisa de perguntas e respostas
+- [x] Pesquisa de perguntas e respostas por hashtags
+- [x] Listagem de comandos disponíveis
 
 ## Tecnologias
 
