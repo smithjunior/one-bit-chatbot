@@ -8,6 +8,7 @@ require "./config/database"
 
 # Load Models
 Dir["./app/models/*.rb"].sort.each { |file| require file }
+Dir["./app/helpers/**/*.rb"].sort.each { |file| require file }
 Dir["./app/services/**/*.rb"].sort.each { |file| require file }
 
 class App < Sinatra::Base

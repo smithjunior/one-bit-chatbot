@@ -13,6 +13,8 @@ gem 'database_cleaner'
 gem 'factory_bot'
 gem 'ffaker'
 
+gem 'rest-client'
+
 group :development do
   gem 'tux'
 end

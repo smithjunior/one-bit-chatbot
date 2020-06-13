@@ -18,6 +18,7 @@ services:
       - .:/onebitbot
     environment: 
       - LANG=C.UTF-8
+      - API_KEY=
 
 volumes:
   postgres:
