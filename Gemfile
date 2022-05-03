@@ -6,7 +6,7 @@ gem 'activerecord', '~> 5.2.2'
 gem 'pg'
 gem 'pg_search', '~> 2.0.1'
 gem 'rake'
-gem 'sinatra', '~> 2.0.5'
+gem 'sinatra', '~> 2.2.0'
 gem 'sinatra-activerecord', '~> 2.0.14'
 
 gem 'database_cleaner'
